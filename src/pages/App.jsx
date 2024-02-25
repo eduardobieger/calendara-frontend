@@ -1,12 +1,11 @@
 import { useState } from "react";
+import Navbar from "../components/Navbar";
 
-function App() {
+export default function App() {
   return (
     <>
-      <h1>Calendara</h1>
+      <Navbar />
       <p>Welcome to Calendara, a web app to schedule your things.</p>
     </>
   );
 }
-
-export default App;
