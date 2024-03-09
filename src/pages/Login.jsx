@@ -30,6 +30,9 @@ export default function Login() {
         data: JSON.stringify({ username, password }),
         withCredentials: true,
       });
+
+      const from = location.state?.from || "/";
+      navigate(from);
     } catch (err) {
       console.error(err.message);
     }
