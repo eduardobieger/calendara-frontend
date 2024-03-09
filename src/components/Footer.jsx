@@ -1,20 +1,28 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-8 bg-zinc-800 w-full">
       <ul className="flex justify-center gap-8">
         <li>
-          Terms of Use
+          <Link to="/terms-of-use">
+            Terms of Use
+          </Link>
         </li>
         <li>
-          Privacy Policy
+          <Link to="/privacy-policy">
+            Privacy Policy
+          </Link>
         </li>
         <li>
-          Release Notes
+          <Link to="/release-notes">
+            Release Notes
+          </Link>
         </li>
         <li>
-          <a href="/">
+          <Link to="/">
             &copy; 2024 Calendara
-          </a>
+          </Link>
         </li>
       </ul>
     </footer>

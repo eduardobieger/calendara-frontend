@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 
 export default function Navbar() {
@@ -27,24 +28,24 @@ export default function Navbar() {
           <h1 className="text-2xl font-bold text-white">Calendara</h1>
           <ul className="flex space-x-5">
             <li>
-              <a href={`/`} className="text-white">
+              <Link to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href={`/about`} className="text-white">
+              <Link to="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href={`/contact`} className="text-white">
+              <Link to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
-              <a href={`/pricing`} className="text-white">
+              <Link to="/pricing">
                 Pricing
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -54,24 +55,24 @@ export default function Navbar() {
           <div className="lg:hidden absolute top-16 left-0 w-full bg-zinc-800 p-4">
             <ul className="flex flex-col space-y-3">
               <li>
-                <a href={`/`} className="text-white">
+                <Link to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href={`/about`} className="text-white">
+                <Link to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href={`/contact`} className="text-white">
+                <Link to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href={`/pricing`} className="text-white">
+                <Link to="/pricing">
                   Pricing
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,14 +81,14 @@ export default function Navbar() {
         {/* Lista de itens da Navbar para telas pequenas */}
         <ul className="hidden lg:flex space-x-5">
           <li>
-            <a href={`/login`} className="text-white">
+            <Link to="/login">
               Login
-            </a>
+            </Link>
           </li>
           <li>
-            <a href={`/signup`} className="text-white">
+            <Link to="/signup">
               Sign Up
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
