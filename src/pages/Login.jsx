@@ -18,7 +18,7 @@ export default function Login() {
             </label>
             <input type="text" id="password" className="border p-1 rounded" />
           </div>
-          <button type="submit" className="bg-blue-800 p-3 rounded w-full">
+          <button type="submit" className="bg-blue-800 p-3 rounded w-full hover:bg-blue-600">
             Login
           </button>
         </form>
