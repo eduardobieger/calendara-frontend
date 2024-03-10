@@ -49,26 +49,35 @@ export default function Navbar() {
         {isMobileMenuOpen && (
           <div className="lg:hidden absolute top-16 left-0 w-full bg-zinc-800 p-4">
             <ul className="flex flex-col space-y-3">
-              <li>
-                <Link to="/">
+              <Link to="/" className="hover:bg-zinc-600 p-2">
+                <li>
                   Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact">
+                </li>
+              </Link>
+              <Link to="/contact" className="hover:bg-zinc-600 p-2">
+                <li>
                   Contact
-                </Link>
-              </li>
-              <li>
-                <Link to="/pricing">
+                </li>
+              </Link>
+              <Link to="/pricing" className="hover:bg-zinc-600 p-2">
+                <li>
                   Pricing
-                </Link>
-              </li>
+                </li>
+              </Link>
+              <Link to="/login" className="hover:bg-zinc-600 p-2">
+                <li>
+                  Login
+                </li>
+              </Link>
+              <Link to="/signup" className="hover:bg-zinc-600 p-2">
+                <li>
+                  Sign Up
+                </li>
+              </Link>
             </ul>
           </div>
         )}
 
-        {/* Lista de itens da Navbar para telas pequenas */}
         <ul className="hidden lg:flex space-x-5">
           <li>
             <Link to="/login">
